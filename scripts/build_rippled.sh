@@ -8,7 +8,7 @@ source scripts/common_vars.sh
 
 num_procs=$(lscpu -p | grep -v '^#' | sort -u -t, -k 2,4 | wc -l) # number of physical cores
 
-docker exec -it ${DOCKER_CONTAINER_NAME} cmake -j${num_procs} --build .
+docker exec -it ${DOCKER_CONTAINER_NAME} cmake  --build . -j ${num_procs}
 
 #cmake --build .
 
