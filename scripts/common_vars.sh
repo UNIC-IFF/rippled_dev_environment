@@ -9,4 +9,4 @@ export DOCKER_BUILD_DIR=/opt/rippled_bld/pkg/out
 export SOURCE_DIR=$(pwd)/rippled
 export BUILD_DIR=$(pwd)/build_rippled
 
-export UNITTESTS="ripple.consensus.ByzantineFailureSim_test"
+export UNITTESTS="ripple.consensus.ByzantineFailureSim"
