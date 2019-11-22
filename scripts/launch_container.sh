@@ -1,6 +1,6 @@
 #! /bin/bash
 
-. common_vars.sh
+. scripts/common_vars.sh
 
 # TODO check if container is already running
 
