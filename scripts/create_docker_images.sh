@@ -9,6 +9,6 @@ echo "Building rippled source builder image..."
 docker build -t $DOCKER_SRC_BUILDER_CONTAINER_IMAGE -f docker/rippled-source-builder/Dockerfile .
 
 echo "Building rippled unittests runner image..."
-docker build -t $DOCKER_RUNNER_CONTAINER_IMAGE -f docker/rippled-unittests-runner/Dockerfile .
+docker build -t $DOCKER_RUNNER_CONTAINER_IMAGE -f docker/rippled-unittests-runner/Dockerfile docker/rippled-unittests-runner
 
 echo "DONE"
