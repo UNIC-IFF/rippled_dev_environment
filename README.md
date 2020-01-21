@@ -6,21 +6,28 @@ This repository contains a set of scripts, settings and procedures helping a dev
 # rippled [![Build Status]]   [![Join the chat at]]
 
 ## Overview
-In this repository, the developes tried to simplify the procedure of having Rippled installed and test possible changes of their code. For this reason,
-they have created several scripts that automate the procedure of the installation and execution of the unittests Ripple provides. Also, docker 
-is a simple way of having the source code and its dependencies ready without the need of reconfigure the environment the code is going to be installed.
+In this repository, the developers tried to simplify the procedure of building and testing the Rippled source code. For this reason,
+they have created several scripts that automate the procedure of building and execution of the unittests Ripple provides. Also, docker 
+is a simple way of having the source code and its dependencies ready without the need to reconfigure the environment the code is going to be installed.
+
+### How it works
+This development environment spawns two docker containers, one is used to build the source code and the other to run the unittests (, or a rippled node). Those containers share the same directory of the development machine as bind volumes.
+build_rippled.sh script builds the source code. 
+run_rippled_unittests.sh script spawns a runner container that uses the executable generated in the BUILD_DIR
+The environment variables used by the scripts are defined in common_vars.sh script. 
+
 
 ## Documentation
 Besides this README file, more documentation is available in the WiKi belonging to this repository.
 
-## Docker Installation for Unitesting
+## Docker Installation for Unit testing
 1. Clone this Repositoy
 2. Download or Clone Rippled Source code inside the previously cloned repository
 3. Run create_docker_images.sh (./scripts/create_docker_images.sh) from which you will get 3 docker images
 4. Run preconfigure_rippled.sh (./scripts/preconfigure_rippled.sh) which script will prepare your environment with the nesseary configurations
 5. Run build_rippled.sh (./scripts/build_rippled.sh) which it will compile the Ripple Source Code on your machine
 6. Set your working directory to build_rippled
-7. Run Ripple UnitTests (./rippled -u)
+7. Run Ripple UnitTests ( ./scripts/run_rippled_unittests.sh ) 
 8. If there are no test failures, you can be fairly certain that your rippled executable compiled correctly.
 
 ## Development
