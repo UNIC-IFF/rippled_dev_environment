@@ -12,9 +12,9 @@ is a simple way of having the source code and its dependencies ready without the
 
 ### How it works
 This development environment spawns two docker containers, one is used to build the source code and the other to run the unittests (, or a rippled node). Those containers share the same directory of the development machine as bind volumes.
-build_rippled.sh script builds the source code. 
-run_rippled_unittests.sh script spawns a runner container that uses the executable generated in the BUILD_DIR
-The environment variables used by the scripts are defined in common_vars.sh script. 
+* build_rippled.sh script builds the source code. ;
+* run_rippled_unittests.sh script spawns a runner container that uses the executable generated in the BUILD_DIR;
+* The environment variables used by the scripts are defined in common_vars.sh script. ;
 
 
 ## Documentation
