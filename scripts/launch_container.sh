@@ -6,7 +6,12 @@
 isrunning=$(docker container ls --filter=name=${DOCKER_CONTAINER_NAME} -q)
 # when it doesn't, lauch it
 if [ -z $isrunning ]; then
-	docker run -d -it --rm --name ${DOCKER_CONTAINER_NAME} -v ${BUILD_DIR}:${DOCKER_BUILD_DIR} -v ${SOURCE_DIR}:${DOCKER_SOURCE_DIR} --entrypoint /bin/bash ${DOCKER_SRC_BUILDER_CONTAINER_IMAGE}
+	docker run -d -it --rm --name ${DOCKER_CONTAINER_NAME} \
+				 -v ${BUILD_DIR}:${DOCKER_BUILD_DIR} \
+				-v ${SOURCE_DIR}:${DOCKER_SOURCE_DIR} \
+				 -v ${KEYSTOOL_BUILD_DIR}:${DOCKER_KEYSTOOL_BUILD_DIR} \
+				-v ${KEYSTOOL_SOURCE_DIR}:${DOCKER_KEYSTOOL_SOURCE_DIR} \
+				 --entrypoint /bin/bash ${DOCKER_SRC_BUILDER_CONTAINER_IMAGE}
 	#docker run -d -it --rm --name ${DOCKER_CONTAINER_NAME} -v ${SOURCE_DIR}:${DOCKER_SOURCE_DIR} -v ${BUILD_DIR}:${DOCKER_BUILD_DIR} --entrypoint /bin/bash ${DOCKER_CONTAINER_IMAGE}
 else
 	echo "It's running already."
