@@ -53,6 +53,6 @@ The following lead developers are responsible for this repository and have admin
 ## Feedback-Chanel
 * GitLab issues
 
-## Acknowledgment
-This project is fully funded by [UBRI] (https://ubri.ripple.com/) 
+## Acknowledgements
+This work is funded by the Ripple’s Impact Fund, an advised fund of Silicon Valley Community Foundation (Grant id: 2018–188546). [UBRI] (https://ubri.ripple.com/) 
 
