@@ -9,6 +9,9 @@ echo "Building rippled source builder image..."
 docker build -t $DOCKER_SRC_BUILDER_CONTAINER_IMAGE --build-arg DIST_TAG=18.04 -f docker/rippled-source-builder/Dockerfile .
 
 echo "Building rippled unittests runner image..."
-docker build -t $DOCKER_RUNNER_CONTAINER_IMAGE -f docker/rippled-unittests-runner/Dockerfile docker/rippled-unittests-runner
+docker build -t $DOCKER_UNITTEST_RUNNER_CONTAINER_IMAGE -f docker/rippled-unittests-runner/Dockerfile docker/rippled-unittests-runner
+
+echo "Building rippled runner image..."
+docker build -t $DOCKER_RUNNER_CONTAINER_IMAGE -f docker/rippled-runner/Dockerfile .
 
 echo "DONE"

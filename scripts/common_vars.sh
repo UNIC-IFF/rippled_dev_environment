@@ -1,7 +1,8 @@
 export DOCKER_DEB_PKG_BUILDER_IMAGE=rippled-ubuntu-builder
 export DOCKER_CONTAINER_NAME=xrp-builder
 export DOCKER_SRC_BUILDER_CONTAINER_IMAGE=rippled-src-builder
-export DOCKER_RUNNER_CONTAINER_IMAGE=rippled-unittest-runner
+export DOCKER_RUNNER_UNITTEST_CONTAINER_IMAGE=rippled-unittest-runner
+export DOCKER_RUNNER_CONTAINER_IMAGE=rippled-runner
 
 export DOCKER_SOURCE_DIR=/opt/rippled_bld/pkg/rippled
 export DOCKER_KEYSTOOL_SOURCE_DIR=/opt/rippled_bld/pkg/validator-keys-tool
