@@ -50,9 +50,18 @@ The following lead developers are responsible for this repository and have admin
 *  Antonis Inglezakis (@ainglezakis)
 *  Marios Touloupou (@mtouloup)
 
+# Research Team
+* Marios Touloupou (@mtouloup) [ touloupos.m@unic.ac.cy ]
+* Antonios Inglezakis (@antiggl) [ inglezakis.a@unic.ac.cy ]
+* Klitos Christodoulou [ christodoulou.kl@unic.ac.cy ]
+* Elias Iosif [ iosif.e@unic.ac.cy ]
+
+## UBRI Funding
+This work is funded by the Ripple’s Impact Fund, an advised fund of Silicon Valley Community Foundation (Grant id: 2018–188546).
+Link: [University Blockchain Research Initiative](https://ubri.ripple.com)
+
 ## Feedback-Chanel
 * GitLab issues
 
-## Acknowledgements
-This work is funded by the Ripple’s Impact Fund, an advised fund of Silicon Valley Community Foundation (Grant id: 2018–188546). [UBRI] (https://ubri.ripple.com/) 
+
 
