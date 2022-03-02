@@ -60,7 +60,7 @@ The following lead developers are responsible for this repository and have admin
 This work is funded by the Ripple’s Impact Fund, an advised fund of Silicon Valley Community Foundation (Grant id: 2018–188546).
 Link: [University Blockchain Research Initiative](https://ubri.ripple.com)
 
-## Feedback-Chanel
+## Feedback-Channel
 * GitLab issues
 
 
